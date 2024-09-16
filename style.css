@@ -10,15 +10,15 @@
   --gray-600: #475569;
   --gray-400: #94a3b8;
   --gray-200: #e2e8f0;
+  --white: #FFF;
   --purple: #7c3aed;
 }
 
 header {
+    display: flex; /* Adicionado */
     background-image: url(./imagens/bg-mobile.png);
     background-size: cover;
     height: 8.375rem;
-
-    display:flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 3.7rem;
@@ -44,14 +44,14 @@ main {
 }
 
 .input-box {
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 0.5rem;
     margin-bottom: 1rem;
 }
 
 .input-box div {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -59,7 +59,7 @@ main {
 .login label {
     font-size: 0.875rem;
     color: var(--grey-800);
-    font-weight:600;
+    font-weight: 600;
 }
 
 .login input {
@@ -73,18 +73,30 @@ main {
     color: var(--gray-400);
 }
 
-.login:hover,
-.login:focus {
-    outline: 1px solid var(--purple);
+.login input:hover,
+.login input:focus {
+    outline: 1px solid var(--purple); /* Corrigido para "input" */
 }
 
 .login a {
     color: var(--purple);
-    text-orientation: none;
+    text-decoration: none; /* Corrigido */
     font-size: 0.875rem;
     font-weight: 600;
 }
 
 .login a:hover {
     text-decoration: underline;
+}
+
+.login button {
+    margin-top: 1rem;
+    padding-block: 1rem;
+    width: 100%;
+    background: var(--purple);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
 }
