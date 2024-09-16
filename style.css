@@ -8,13 +8,14 @@
 :root {
   --grey-800: #1E293B;
   --gray-600: #475569;
+  --purple: #7c3aed;
 }
 
 header {
     background-image: url(./imagens/bg-mobile.png);
     background-size: cover;
     height: 8.375rem;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 3.7rem;
@@ -25,7 +26,6 @@ main {
 }
 
 .descricao {
-    border: 1px solid red;
     margin-bottom: 2.5rem;
 }
 
@@ -38,4 +38,31 @@ main {
 .descricao p {
     font-size: 0.8125rem;
     color var(--gray-600);
+}
+
+.input-box {
+    display:flex;
+    flex-direction: column;
+}
+
+.input-box div {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login label {
+    font-size: 0.875rem;
+    color: var(--grey-800);
+    font-weight:600;
+}
+.login a {
+    color: var(--purple);
+    text-orientation: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.login a:hover {
+    text-decoration: underline;
 }
