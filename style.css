@@ -5,10 +5,27 @@
     font-family: 'Titilium Web', sans-serif;
 }
 
+:root {
+  --grey-800: #1E293B;
+  --gray-600: #475569;
+}
+
 header {
     background-image: url(./imagens/bg-mobile.png);
     background-size: cover;
     height: 8.375rem;
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3.7rem;
+}
+
+main {
+    padding-inline: 1.5rem;
+}
+
+.descricao h1 {
+    color: var(--grey-800);
+    margin-bottom: 1rem;
+    font-size: 1.5625rem;
 }
